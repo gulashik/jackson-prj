@@ -1,0 +1,18 @@
+spring:
+  jackson:
+    # Настройка глобального формата даты/времени
+    date-format: yyyy-MM-dd HH:mm:ss
+    # Включает/выключает падение при неизвестных свойствах
+    deserialization:
+      fail-on-unknown-properties: false
+    # Настройка стиля именования полей (SNAKE_CASE = "first_name")
+    property-naming-strategy: SNAKE_CASE
+    # Не включать null поля в JSON
+    default-property-inclusion: non_null
+    # Настройка часового пояса
+    time-zone: UTC
+    serialization:
+      # Отключает запись дат в виде чисел (timestamp)
+      write-dates-as-timestamps: false
+      # Включает индентацию (pretty print)
+      indent-output: true
