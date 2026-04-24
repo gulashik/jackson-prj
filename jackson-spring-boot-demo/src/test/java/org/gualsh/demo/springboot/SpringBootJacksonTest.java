@@ -54,3 +54,4 @@ class SpringBootJacksonTest {
 
     static record DemoDto(String userName, LocalDateTime createdAt) {}
 }
+
